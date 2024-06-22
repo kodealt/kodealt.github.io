@@ -1,3 +1,8 @@
+:root{
+	--c1: #00ff;
+	--c2: #ff00e6;
+}
+
 html,
 body {
   margin: 0;
@@ -6,10 +11,6 @@ body {
   height: 100%;
   overflow: hidden;
   cursor: none;
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 .background {
@@ -21,7 +22,6 @@ body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #313131, #4d4d4d) no-repeat;
-  animation: movegradient 10s infinite linear;
 }
 
 #dots {
@@ -70,6 +70,19 @@ body {
   width: 7.5px;
 }
 
+.info {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 1%, rgba(0, 0, 0, 0.3));
+	border-style: dashed;
+	border-width: 2px;
+	border-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	backdrop-filter: blur(25px);
+	transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+	opacity: 1;
+}
 
 #date {
   color: white;
@@ -86,9 +99,10 @@ body {
   position: absolute;
   font-family: "Tektur", sans-serif;
   right: 5%;
-  top: 12%;
+  top: 15%;
   font-size: 15px;
   transition: color 0.5s ease;
+  user-select: none;
 }
 
 #about {
@@ -98,7 +112,8 @@ body {
   right: 5%;
   bottom: 7%;
   font-size: 15px;
-  transition: color 0.5s ease;
+  text-decoration: underline;
+  transition: color 0.5s ease, background 0.5s ease;
 }
 
 #date:hover {
@@ -110,17 +125,33 @@ body {
 }
 
 #about:hover {
-  color: black;
+  background: linear-gradient(to right, var(--c1), var(--c2), var(--c1));
+  background-size: 200%;
+  overflow: hidden;
+  -webkit-background-clip: text;
+  text-decoration: underline;
+  color: transparent;
+  animation: movegradient 2s linear infinite;
+}
+
+#jp{
+  color: white;
+  position: absolute;
+  font-family: "Noto Serif JP", serif;
+  left: 5%;
+  bottom: 7%;
+  font-size: 15px;
+  transition: color 0.5s ease, background 0.5s ease;
+  display: none;
 }
 
 /* animations */
 
 @keyframes movegradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 100% 50%;
-  }
+	from{
+		background-position: 0% center;
+	}
+	to{
+		background-position: -200% center;
+	}
 }
