@@ -1,5 +1,43 @@
 const mouse = document.querySelector('.mouse');
 const blob = document.querySelector('.mouseblob');
+const info = document.querySelector('.info');
+const date = document.getElementById('date');
+const time = document.getElementById('time');
+
+
+
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+function Zero(value) {
+  return value < 10 ? '0' + value : value;
+}
+
+setInterval(() => {
+  let now = new Date();
+  let year = now.getFullYear();
+  let month = Zero(now.getMonth() + 1);
+  let zdate = Zero(now.getDate());
+  let hours = Zero(now.getHours());
+  let minutes = Zero(now.getMinutes());
+  let seconds = Zero(now.getSeconds());
+  let datestr = `${year} / ${month} / ${zdate}`;
+  let timestr = `${hours} : ${minutes} : ${seconds}`;
+
+  if (date) {
+    date.textContent = datestr;
+  }
+  if (time) {
+    time.textContent = timestr;
+  }
+}, 1000);
+
+function about(){
+	
+
+}
+
 let isMousedown = false;
 let isMouseInViewport = true;
 
@@ -51,7 +89,7 @@ document.addEventListener('mouseup', function() {
 document.addEventListener('mouseenter', function() {
   isMouseInViewport = true;
   mouse.style.opacity = 1;
-  blob.style.opacity= 1;
+  blob.style.opacity = 1;
 });
 
 document.addEventListener('mouseleave', function() {
