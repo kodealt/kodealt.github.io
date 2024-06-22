@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alt アルト</title>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +24,16 @@
   <body>
     <div class="container">
       <div class="text">
-        <p id="about" class='underline'>about</p>
-		<p id='date'>date</p>
-		<p id='time'>time</p>
+        <p id="about" onclick='about()'>about</p>
+        <div class='info'></div>
+        <p id='date'>date</p>
+        <p id='time'>time</p>
+        <p id='jp'>日本語</p>
       </div>
       <div class="background"></div>
-	  <div id='dots'></div>
+      <div id='dots'></div>
       <div class="mouse"></div>
-	  <div class="mouseblob"></div>
+      <div class="mouseblob"></div>
     </div>
   </body>
 
