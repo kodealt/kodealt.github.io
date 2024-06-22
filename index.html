@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alt - (アルト)</title>
+    <link rel="icon" href="icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
-<body>
-    <div class="about">About me</div>
-    <div class="icons">
-        <a href="https://github.com/kodealt" target="_blank">
-            <img id="git" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-        </a>
-        <a href="https://www.youtube.com/@thisisalt." target="_blank">
-            <img id="yt" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        </a>
-        <a href="https://leetcode.com/u/ship_/" target="_blank">
-            <img id="le" src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3628885-3030025.png" alt="LeetCode">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+  </head>
 
-        </a>
+  <body>
+    <div class="container">
+      <div class="text">
+        <p id="about" class='underline'>about</p>
+		<p id='date'>date</p>
+		<p id='time'>time</p>
+      </div>
+      <div class="background"></div>
+	  <div id='dots'></div>
+      <div class="mouse"></div>
+	  <div class="mouseblob"></div>
     </div>
-	<div class='background'></div>
-    <script src="script.js"></script>
-</body>
+  </body>
+
 </html>
