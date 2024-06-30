@@ -3,6 +3,24 @@ const blob = document.querySelector('.mouseblob');
 const about = document.getElementById('about');
 const date = document.getElementById('date');
 const time = document.getElementById('time');
+const button = document.querySelector('.button');
+const bg = document.querySelector('.background');
+bg.classList.add('movingRadials')
+
+let ind = 0;
+
+function tog() {
+  if (ind % 2 == 0) {
+    bg.classList.add('linearGrad');
+    bg.classList.remove('movingRadials');
+    button.textContent = 'Switch to radial bg';
+  } else {
+    bg.classList.add('movingRadials');
+    bg.classList.remove('linearGrad');
+    button.textContent = 'Switch to linear bg';
+  }
+  ind++;
+}
 
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
@@ -94,14 +112,17 @@ document.addEventListener('mouseleave', function() {
 
 //bacgkround 😭
 
-let angA = 0;  let angB = 0;  let angC = 0;  let angD = 0; 
+let angA = 0;
+let angB = 0;
+let angC = 0;
+let angD = 0;
 
 function animateCir() {
 
   // Circle A
   const centerX_A = window.innerWidth * (30 / 100);
   const centerY_A = window.innerHeight * (40 / 100);
-  
+
 
   // Circle B
   const centerX_B = window.innerWidth * (50 / 100);
