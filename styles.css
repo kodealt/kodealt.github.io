@@ -166,6 +166,15 @@ body {
   color: black;
 }
 
+#important {
+  position: absolute;
+  font-color: blue;
+  color: white;
+  right: 5%;
+  bottom: 7%;
+  font-size: 20px;
+}
+
 #jp {
   color: white;
   position: absolute;
