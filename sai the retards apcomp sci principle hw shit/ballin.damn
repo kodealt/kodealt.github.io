@@ -1,0 +1,33 @@
+Give a recommendation for what policy or solution your candidate should advocate for. Your solution could be a law that should be passed or repealed, a government policy, or a technological solution your candidate should promote.  Please include a statement of your policy with Pro & Cons. Your recommendation will be displayed on a one page website that you create using HTML, CSS and JavaScript..  Please see the instructions below.
+
+You are asked to create an original, independent webpage that uses HTML, CSS and JavaScript.  You create the site using Google sites.  You will need to put a link to your Google site and a copy of your code into this document and turn it in on the assignment.  Here are the details for your website.
+HTML - You must use all of the attached HTML tags on your webpage.  This is a lot of content for one page, page design will be critical. You may need to google some of the tags to see how they work. 
+
+<a> for link
+<b> to make bold text
+<strong> for bold text with emphasis
+<body> main HTML part
+<br> for break
+<div> it is a division or part of an HTML document
+<h1>... for titles
+<i> to make an italic text
+<img> for images in document
+<ol> is an ordered list, 
+<ul> for an unordered list
+<li> is a list item in bulleted (ordered list)
+<p> for paragraph
+<span> to style part of text
+
+CSS - We will use internal CSS for our webpage.  An internal CSS is defined in the <head> section of an HTML page, within a <style> element.  You should use CSS style to set header and paragraph text color, font and font size.  You should use CSS style to set the page background as an image.
+
+The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a "powderblue" background color: 
+
+
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+
+
+JavaScript - You must use JavaScript to create a button that will display information when clicked.  The button should have a label.  There should be instructions inside the button that tell the user what to do (i.e. “Click Me
