@@ -12,7 +12,7 @@ function thefelix() {
     const x = (rect.left + rect.right) / 2 / window.innerWidth; 
     const y = (rect.top + rect.bottom) / 2 / window.innerHeight;
     confetti({
-        particleCount: 2000,
+        particleCount: 49999,
         spread: 500,
         scalar: 1,
         ticks: 100,
