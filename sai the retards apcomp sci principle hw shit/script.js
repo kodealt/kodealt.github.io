@@ -5,6 +5,7 @@ content.addEventListener('wheel', function(event){
     content.scrollLeft += event.deltaY;
 });
 
+let feixiao;
 
 function thefelix() {
     const elem = document.getElementById('dare');
@@ -18,5 +19,6 @@ function thefelix() {
         ticks: 100,
         origin: { x: x, y: y}
     });
-    elem.textContent = 'ong i was clicked';
+    feixiao++
+    elem.textContent = `ong i was clicked ${feixiao}`;
 };
