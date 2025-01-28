@@ -1,6 +1,6 @@
 -  Hi, I’m @kodealt
 -  I’m interested in being the greatest programmer ever!!!1! (not happening, hope it does tho)
--  I’m currently learning: c++, and Japanese (こにちわ!!)
+-  I’m currently learning: Japanese (こにちわ!!)
 -  I’m looking to collaborate on: anything python, web dev (js, HTML, CSS)
 -  How to reach me: on discord- a_persan ( https://discordapp.com/users/579602068130627584 )
 -  Pronouns: he/ him
