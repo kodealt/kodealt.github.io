@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ようこそ、</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+
+            @font-face {
+                font-family: "Eva Matisse";
+                src: url('/assets/fonts/EVA-Matisse_Standard.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            :root {
+                background: #121212;
+                background-image: url("assets/bg.png");
+                overflow: hidden;
+            }
+            .text {
+                font-family: "Eva Matisse", serif;
+                color: #dcdcdc;
+                position: absolute;
+            }
+
+            .biocont {
+                position: absolute;
+                left: 10vw;
+                top: 31vh;
+                width: 44vw;
+                height: 63vh;
+                background-color: #3535356c;
+                opacity: 0;
+                overflow: auto;
+                backdrop-filter: blur(15px);
+                scrollbar-width: none;
+                font-size: 21px;
+                padding: 15px;
+                border-radius: 15px;
+                animation: extendbody 3s ease-out 1s forwards;
+            }
+
+            #welcome {
+                font-size: 7vw;
+                left: 9.5vw;
+                top: 13.2vh;
+                transform: scale(1, 2);
+                animation: fadein 1s ease 0s forwards;
+            }
+
+            
+            #kodealt {
+                color: #dcdcdc;
+                font-size: 6vw;
+                left: 65vw;
+                top: 59vh;
+                transform: scale(1.35, 1);
+                mix-blend-mode: difference;
+                opacity: 0;
+                animation: fadein 1s ease 1s forwards;
+            }
+
+            #rectA {
+                position: absolute;
+                background-color: #dcdcdc;
+                width: 36vw;
+                height: 13vh;
+                left: 60vw;
+                top: 60vh;
+                border-radius: 15px;
+                opacity: 100%;
+                opacity: 0;
+                animation: fadein 1s ease 1s forwards,
+                extendLeft .80s ease-out 1s forwards;
+            }
+
+            #bio {
+                color: #505050;
+                opacity: 0;
+                transition: color 0.5s ease;
+                animation: textFadein 3s ease 2.85s forwards;
+            }
+
+            #bio:hover {
+                color: #c0c0c0;
+                
+            }
+
+            @keyframes fadein {
+                0% {
+                    opacity: 0%;
+                }
+                100% {
+                    opacity: initial;
+                }
+            }
+
+            @keyframes fadeout {
+                0% {
+                    opacity: initial;
+                }
+                100% {
+                    opacity: 0%;
+                }
+            }
+
+            @keyframes extendLeft {
+
+                0% {
+                    opacity: 100%;
+                    width: 1vw;
+                }
+                100% {
+                    width: 36vw;
+                }
+            }
+
+            @keyframes extendbody{
+                
+                0% {
+                    opacity: 50%;
+                    width: 0vw;
+                    height: 0vh;
+                    left: 32vw;
+                }
+
+                45% {
+                    width: 44vw;
+                    height: 0vh;
+                    left: 10vw;
+                }
+
+                100% {
+                    opacity: 100%;
+                    height: 63vh;
+                }
+            }
+
+            @keyframes textFadein {
+                
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <noscript>
+            <p>JavaScript is disabled in your browser. Please enable it for full functionality.</p>
+        </noscript>
+        
+        <div class="container"id="homeContainer">
+            <div class="text" id="welcome">welcome, to</div>
+            <div id="rectA"></div>
+            <div class="text" id="kodealt">kodealt</div>
+            <div class="biocont">
+                <div class="text" id="bio">
+                    who is "kodealt"
+he is someone that decides on random projects to work on and finishes them to the point that only needs some minor refinement, yet he doesn't finish it absolutely. at ## years, he has decided to torture, or set himself for failure next year at his school.
+<br><br>thinking he is the best at everything, just half-asses through everything and yet manages to get past everything. 
+<br><br>education? mostly self-taught, yet still doesn't know many things, for example, how to communicate to people properly. while he writes this, he is watching an anime, a hobby of his, and while creating this site, he has about # projects in mind, yet doesn't even try to work on it.
+<br><br>his interests? math, computers, physics, and anything that has to do with numbers and innovation, I suppose. Master procrastinator. seriously. i  have about 4 missing assignments as of right now. 
+<br><br>learning currently? physics, calculus, and yeah.
+<br><br>still, at ##, with bare minimum amount of friends, and a huge ego that someone should really deflate, doesn't want to be bound by letter grades, so decides to just not do his homework and bare minimum to pass his classes (no colleges are going to accept him)
+<br><br>hates? politics and english. which is why I'm not gonna do politics. 
+<br><br>asfore mentioned anime, he loves it so much that he has created (?) an app that should theoretically make a anime tracker,  but made it in python, and guess what? he compiled it. so its broken. so he has to learn c++ and make it there. which he does(not).
+<br><br>as an anime nerd, he has watched so many he doesn't even know how many and now is into manga (rip his wallet)
+<br><br>oh, right. he's also obsessed with learning Japanese  and is also gonna learn russian soon, hence the Japanese intro.
+<br><br>that's it.
+<br><br>yeah he doesn't really have much an interesting life.
+<br><br>no dedication whatsoever. 
+<br><br>is he gonna get hired? holy fucking hell no!!!
+<br><br>anyways yeah that's it thanks  for reading.
+<br><br><br>also do realize that this entire site is only one page.
+<br><br>there is another site but its hidden in the code of this site. 
+<br><br><br>good luck.
+<br><br><br><br><br><br>*also a visual designer / artist
+                </div>
+            </div>
+        </div>
+        <script>
+
+            const eng = `who is "kodealt"
+he is someone that decides on random projects to work on and finishes them to the point that only needs some minor refinement, yet he doesn't finish it absolutely. at ## years, he has decided to torture, or set himself for failure next year at his school.
+
+thinking he is the best at everything, just half-asses through everything and yet manages to get past everything. 
+
+education? mostly self-taught, yet still doesn't know many things, for example, how to communicate to people properly. while he writes this, he is watching an anime, a hobby of his, and while creating this site, he has about # projects in mind, yet doesn't even try to work on it.
+
+his interests? math, computers, physics, and anything that has to do with numbers and innovation, I suppose. Master procrastinator. seriously. i  have about 4 missing assignments as of right now. 
+
+learning currently? physics, calculus, and yeah.
+
+still, at ##, with bare minimum amount of friends, and a huge ego that someone should really deflate, doesn't want to be bound by letter grades, so decides to just not do his homework and bare minimum to pass his classes (no colleges are going to accept him)
+
+hates? politics and english. which is why I'm not gonna do politics. 
+
+asfore mentioned anime, he loves it so much that he has created (?) an app that should theoretically make a anime tracker,  but made it in python, and guess what? he compiled it. so its broken. so he has to learn c++ and make it there. which he does(not).
+
+as an anime nerd, he has watched so many he doesn't even know how many and now is into manga (rip his wallet)
+
+oh, right. he's also obsessed with learning Japanese  and is also gonna learn russian soon, hence the Japanese intro.
+
+that's it.
+
+yeah he doesn't really have much an interesting life.
+
+no dedication whatsoever. 
+
+is he gonna get hired? holy fucking hell no!!!
+
+anyways yeah that's it thanks  for reading.
+
+also do realize that this entire site is only one page.
+
+
+there is another site but its hidden in the code of this site. 
+
+
+good luck.
+
+
+
+
+*also a visual designer / artist`
+        const jp = `「kodealt」って誰？
+
+        彼は、適当にプロジェクトを選んで、数回の修正で済むところまで仕上げるタイプの人です。でも、完全に終わらせることはありません。##歳なのに、来年は落第するつもりです。
+
+        彼は自分が何でも一番だと思っているので、何でも中途半端にやって、それでもなんとかやり遂げています。
+
+        学歴？ ほとんど独学ですが、まだ知らないことがたくさんあります。例えば、人との適切なコミュニケーションの取り方とか。これを書いている間は、趣味でアニメを見ています。そして、このサイトを作っている間も、#個のプロジェクトについて考えていますが、実際には始めていません。
+
+        興味？ 数学、コンピューター、物理学、そして数字とイノベーションに関することなら何でも。私は本当に先延ばし屋です。本当に。まだ提出していない課題が4つくらいあります。
+
+        今何を勉強していますか？ 物理学、微積分、あとうん。
+
+        それでも、## は友達が少なく、誰もがうんざりするような強烈なエゴを抱え、成績に縛られたくないという理由で、宿題は一切せず、授業に合格するために必要な最低限のことだけをすることに決めました（どんな大学も彼を受け入れてくれないでしょう）。
+
+
+
+        嫌いなものは何ですか？政治と英語。だから私は政治はやりません。
+
+
+        前にも言ったように、彼はアニメが大好きで、理論上はアニメトラッカーになるはずだったアプリ(？)を作りました。しかし、Python で作ったら、どうなったと思いますか？コンパイルできませんでした。というか、壊れていました。そこで彼は C++ を学んで C++ で作らなければなりませんでした。しかし、彼はそれをしませんでした（そして今もしていません）。
+
+
+        アニメオタクである彼は、数え切れないほどのアニメを観ており、今ではマンガに夢中です（財布が破れそうです）。
+
+
+        そうそう。彼は日本語の学習にも夢中で、もうすぐロシア語も学ぶ予定なので、日本語のイントロがあるんです。
+
+
+        それだけです。
+
+
+        つまり、彼の人生はそれほど面白くないということです。    
+
+
+        全く熱心ではありません。
+
+
+        彼は採用されるでしょうか？絶対に無理です!!!
+
+
+        とにかく、以上です。読んでいただきありがとうございます。
+
+
+        また、このサイトは1ページのみであることにご注意ください。
+
+
+        他にもサイトを持っていますが、このサイトのコード内に隠されています。
+
+
+        幸運を祈ります！`
+
+            var final = jp;
+            const textbox = document.getElementById("bio");
+
+            const duration = 1000;
+
+            var toggleIsTrue = true;
+
+            const steps = eng.length/2;
+            const interval = duration / steps;
+
+            let i = 0;
+            
+            let j = 0;
+            let subFolder = "f3";
+            let faviconInterval = (1/4)*1000;
+            let frames = 24;
+            
+
+            setTimeout(() => {
+            const animation = setInterval(() => {
+                const part = eng.slice(0, i * 4);
+                const rest = jp.slice(i * 2);
+                textbox.innerText = part + rest;
+
+                i++;
+                if (i >= steps) {
+                    clearInterval(animation);
+                    textbox.innerText = eng;
+                    }
+            }, interval);
+        }, 3000);
+            setLogo(`/assets/${subFolder}/00${(j%frames+1).toString().padStart(2,'0')}.png`);   
+
+            const logoInterval = setInterval(() => {
+                if (!toggleIsTrue) {
+                    clearInterval(logoInterval);
+                     return;
+                }
+            setLogo(`/assets/${subFolder}/00${(j%frames+1).toString().padStart(2,'0')}.png`);
+            j++;
+            }, faviconInterval);
+
+            async function setLogo(url, size = "64x64") {
+                document.querySelectorAll("link[rel~='icon']").forEach(link => link.remove());
+
+                const link = document.createElement('link');
+                link.rel = 'icon';
+                link.type = 'image/png';
+                link.href = url;
+                link.sizes = size;
+                document.head.appendChild(link);
+            }
+
+        //    "/img"
+
+            const bio = document.getElementById
+
+        </script>
+    </body>
+</html>
