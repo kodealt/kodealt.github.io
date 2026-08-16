@@ -1,4 +1,4 @@
-export function logos(faviconInterval = 100, toggleIsTrue = true) {
+export function logos(subFolder = 'f3', frames = 24, faviconInterval = 100, toggleIsTrue = true) {
        let j = 0;
        subFolder = 'f3';
        
