@@ -26,6 +26,29 @@ export class ScrambledEggs {
     update() {
         let out = '';
         let cmp = '';
-        for (let i = 0, n = this.queue.length; )
+        for (let i = 0, n = this.queue.length; i < n; i++){
+            let {from, to, start, end, char} = this.queue[i];
+            if (this.frame >= end){
+                cmp++;
+                out += to;
+            } else if (this.frame >= start){
+                if (!char || Math.random() < 0.20){
+                    char = this.randomChar();
+                    this.queue[i].char = char;
+                }
+                out += from
+            }
+        }
+        this.target.innerHtml = output;
+        if(complete === this.queue.length) {
+            this.resolve();
+
+        } else {
+            this.frameRequest = requestAnimationFrame(this.update);
+            this.frame++
+        }
+    }
+    randomChar(){
+        return this.chars[Math.floor(Math.ramdom() * this.chars.length)]
     }
 }
