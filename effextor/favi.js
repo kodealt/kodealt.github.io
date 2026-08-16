@@ -1,11 +1,19 @@
-export function logos(subFolder = 'f3', frames = 24, faviconInterval = 100, toggleIsTrue = true) {
-        const images = [];
+export async function logos(subFolder = 'f3', frames = 24, faviconInterval = 175, toggleIsTrue = true) {
+        const images = await Promise.all(
+            Array.from({length: frames}, (_, i) =>{
+                const frame = (i+1).toString().padStart(2, "0");
+                const img = new Image();
+                img.src = `/assets/${subFolder}/00${frame}.png`;
+                return new Promise((resolve, reject) => {
+                    img.onload = () => resolve(img);
+                    img.onerror = reject;
+                });
+            })
+        );
         
-        for (let i = 0; i <= frames; i++){
-            const img = new Image();
-            img.src = `/assets/${subFolder}/00${(i%frames+1).toString().padStart(2,'0')}.png`;
-            images.push(img);
-        }
+
+        
+        
 
         let favicon = document.querySelector("link[rel~='icon']");
 

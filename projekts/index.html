@@ -7,23 +7,62 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>projekts/00</title>
+        <title>projekts//:00</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/assets/f3/0001.png">
         <link rel="stylesheet" href="/fallback.css">
         <script type="module" src="/icon.js"></script>
         <style>
+#body{
+    display: flex;
+    flex-direction: column;
+}
+.titlebox{
+    width: fit-content;
+}
 #title{
     position: relative;
+    top: 20px;
     left: 10%;
     font-size: 5vw;
 }
+*{
+    box-sizing: border-box;
+
+}
+.content{
+    background: linear-gradient(#0f0f0f, #0c0c0c);
+    width: 90vw;
+    height: 80vh;
+    margin: 50px auto 0;
+    overflow: auto;
+    scrollbar-width: none;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px auto;
+    gap: 15px;
+    padding: 50px;
+}
+.card{
+    background-color: #cfcfcf;
+    width: 200px;
+    height: 350px;
+    overflow: auto;
+    border-radius: 5px;
+    scrollbar-width: none;
+}
+
         </style>
     </head>
-    <body>
+    <body id="body">
         <div class="titlebox">
-            <div class="text" id = 'title'>projekts</div>
+            <div class="text" id='title'>projekts//:00</div>
         </div>
+        <div class="content" id='holder'>
+        </div>
+
+    <script type="module" src="getItms.js"></script>
     </body>
 </html>
