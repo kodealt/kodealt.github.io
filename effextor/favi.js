@@ -1,8 +1,5 @@
 export function logos(subFolder = 'f3', frames = 24, faviconInterval = 100, toggleIsTrue = true) {
        let j = 0;
-       subFolder = 'f3';
-       
-
        setLogo(`/assets/${subFolder}/00${(j%frames+1).toString().padStart(2,'0')}.png`);   
 
        const logoInterval = setInterval(() => {
