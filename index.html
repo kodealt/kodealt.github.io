@@ -11,7 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/assets/f3/0001.png">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/fallback.css">
         <style>
 
             @font-face {
@@ -28,7 +28,7 @@
                 overflow: hidden;
             }
             .text {
-                font-family: "Eva Matisse", serif;
+                font-family: "eva matisse", serif;
                 color: #dcdcdc;
                 position: absolute;
             }
@@ -48,6 +48,12 @@
                 padding: 15px;
                 border-radius: 5px;
                 animation: extendbody 2s ease-out 1s forwards;
+            }
+
+            .links {
+                font-family: "Eva Matisse", serif;
+                color: #dcdcdc;
+                cursor: help;
             }
 
             #welcome {
@@ -166,7 +172,7 @@
             <p>JavaScript is disabled in your browser. Please enable it for full functionality.</p>
         </noscript>
         
-        <script type="module" src="main.js"></script>
+        <script type="module" src="icon.js"></script>
         <div class="container"id="homeContainer">
             <div class="text" id="welcome">welcome, to</div>
             <div id="rectA"></div>
@@ -193,7 +199,8 @@ he is someone that decides on random projects to work on and finishes them to th
 <br><br>there is another site but its hidden in the code of this site. 
 <br><br><br>good luck.
 <br><br><br><br><br><br>*also a visual designer / artist
-<a href="/projekts">projekts</a>
+<br><br>
+<a class='links' id='bio' href="/projekts">projekts</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Eva Matisse";
+    src: url('/assets/fonts/EVA-Matisse_Standard.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    background: #121212;
+    background-image: url("/assets/bg.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.text{
+     font-family: "eva matisse", serif;
+     color: #dcdcdc;
+
+}
