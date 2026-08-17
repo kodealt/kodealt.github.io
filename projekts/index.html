@@ -21,6 +21,7 @@
 .titlebox{
     width: fit-content;
 }
+
 #title{
     position: relative;
     top: 20px;
@@ -46,13 +47,31 @@
     padding: 50px;
 }
 .card{
-    background-color: #cfcfcf;
+    background-color: #0f0f0f;
     width: 200px;
     height: 350px;
     overflow: auto;
     border-radius: 5px;
     scrollbar-width: none;
+    cursor: zoom-in;
 }
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        rgba(200,200,200,0.2),
+        transparent 30%
+    );
+
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
 
         </style>
     </head>
