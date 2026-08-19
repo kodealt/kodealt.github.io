@@ -55,24 +55,6 @@
     scrollbar-width: none;
     cursor: zoom-in;
 }
-
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-
-    background: radial-gradient(
-        circle at var(--mouse-x) var(--mouse-y),
-        rgba(200,200,200,0.2),
-        transparent 30%
-    );
-
-    opacity: 1;
-    transition: opacity 0.15s;
-}
-
-
         </style>
     </head>
     <body id="body">

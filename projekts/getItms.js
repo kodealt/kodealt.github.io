@@ -25,10 +25,8 @@ function buildCard(title, description){
         const rotateX = yValue * -maxRotation;
         const rotateY = xValue * maxRotation;
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        card.style.boxShadow = `${-rotateY *0.2}px ${rotateX * 0.2}px 10px rgba(0200,75,75,0.6)`;
+        card.style.boxShadow = `${-rotateY *0.2}px ${rotateX * 0.2}px 10px rgba(020,020,20,0.6)`;
 
-    card.style.setProperty('--mouse-x', `${mouseX}px`);
-    card.style.setProperty('--mouse-y', `${mouseY}px`);
     })
 }
 buildCard('projekt00', 'this site')
