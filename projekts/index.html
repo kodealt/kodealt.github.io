@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>projekts//:00</title>
+        <title>projekts/00</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/assets/f3/0001.png">
@@ -29,6 +29,7 @@
     font-size: 5vw;
 }
 *{
+
     box-sizing: border-box;
 
 }
@@ -47,21 +48,49 @@
     padding: 50px;
 }
 .card{
-    background-color: #0f0f0f;
+    background: linear-gradient(#0e0e0e, #0c0c0c);
     width: 200px;
     height: 350px;
     overflow: auto;
     border-radius: 5px;
     scrollbar-width: none;
     cursor: zoom-in;
+    border: #313131 solid 1px;
+    box-shadow: 0 0 10px rgba(50,50,50,0.6);
 }
+.ptitle{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff4db;
+    font-size: 1.5rem;
+}
+.pdesc{
+    width: 100%;
+    margin: 10px;
+    color: rgb(153, 143, 131);
+    height: fit-content;
+}
+
+#canvas {
+    width: 75%;
+    height: 100%;
+}
+#holder {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
         </style>
     </head>
     <body id="body">
         <div class="titlebox">
-            <div class="text" id='title'>projekts//:00</div>
+            <div class="text" id='title'>projekts/00</div>
         </div>
-        <div class="content" id='holder'>
+        <div class="content">
+            <canvas id="canvas"></canvas>
+            <div id='holder'></div>
         </div>
 
     <script type="module" src="getItms.js"></script>
